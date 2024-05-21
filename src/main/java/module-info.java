@@ -3,8 +3,8 @@ module com.javarush.cryptoanalyzer.kaminsky {
     requires javafx.fxml;
 
 
-    opens com.javarush.cryptoanalyzer.kaminsky to javafx.fxml;
-    exports com.javarush.cryptoanalyzer.kaminsky;
+    opens analyzer to javafx.fxml;
+    exports analyzer;
     exports service;
     opens service to javafx.fxml;
     exports controller;

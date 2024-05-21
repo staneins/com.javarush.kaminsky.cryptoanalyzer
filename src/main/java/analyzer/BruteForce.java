@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.kaminsky;
+package analyzer;
 
 import java.util.HashMap;
 import java.util.Map;

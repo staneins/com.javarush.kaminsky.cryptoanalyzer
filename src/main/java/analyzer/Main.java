@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.kaminsky;
+package analyzer;
 
 public class Main {
     public static void main(String[] args) {

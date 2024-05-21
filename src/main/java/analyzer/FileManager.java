@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.kaminsky;
+package analyzer;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
