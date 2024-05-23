@@ -2,6 +2,9 @@ package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+
+import java.io.File;
 
 public class EncryptController {
 
@@ -9,8 +12,9 @@ public class EncryptController {
     TextField insertKeyField;
 
     @FXML
-    protected void onChooseFileButtonClick() {
-        System.out.println("Нажать кнопка выбора файла");
+    protected void onChooseFileEncryptButtonClick() {
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(null);
     }
 
     @FXML

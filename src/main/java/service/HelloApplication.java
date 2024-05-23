@@ -12,16 +12,12 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     Parent root;
     @Override
-    public void start(Stage stage) {
-        try {
-            root = FXMLLoader.load(getClass().getResource("/caesar.fxml"));
-            Scene scene = new Scene(root, 600, 400);
-            stage.setTitle("Hello!");
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/caesar2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static void main(String[] args) {

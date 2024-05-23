@@ -5,8 +5,8 @@ module com.javarush.cryptoanalyzer.kaminsky {
 
     opens analyzer to javafx.fxml;
     exports analyzer;
-    exports service;
-    opens service to javafx.fxml;
     exports controller;
     opens controller to javafx.fxml;
+    exports service;
+    opens service to javafx.fxml;
 }
