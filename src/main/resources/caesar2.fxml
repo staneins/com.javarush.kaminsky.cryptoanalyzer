@@ -29,7 +29,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="enterCipherOffset" layoutX="337.0" layoutY="185.0" />
+                  <TextField fx:id="enterCipherOffset" layoutX="337.0" layoutY="185.0"/>
                   <Button fx:id="cipherButton" layoutX="41.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="385.0" text="Ave! True to Caesar!" onAction="#onDoEncryptButtonClick">
                      <font>
                         <Font size="36.0" />
@@ -52,7 +52,7 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="chooseFileDecipherButton" layoutX="337.0" layoutY="122.0" mnemonicParsing="false" text="Выбрать" />
+                  <Button fx:id="chooseFileDecipherButton" layoutX="337.0" layoutY="122.0" mnemonicParsing="false" text="Выбрать" onAction="#onChooseFileDecipherButtonClick"/>
                   <Separator layoutX="52.0" layoutY="90.0" prefHeight="5.0" prefWidth="513.0" />
                   <Label layoutX="58.0" layoutY="122.0" prefHeight="25.0" prefWidth="149.0" text="Выберите файл:">
                      <font>
@@ -64,8 +64,8 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="enterDecipherOffset" layoutX="337.0" layoutY="185.0" />
-                  <Button fx:id="decipher" layoutX="41.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="385.0" text="Ave! True to Caesar!">
+                  <TextField fx:id="enterDecipherOffset" layoutX="337.0" layoutY="185.0"/>
+                  <Button fx:id="decipher" layoutX="41.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="385.0" text="Ave! True to Caesar!" onAction="#onDoDecryptButtonClick">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -88,14 +88,14 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="chooseFileBruteforceButton" layoutX="337.0" layoutY="122.0" mnemonicParsing="false" text="Выбрать" />
+                  <Button fx:id="chooseFileBruteforceButton" layoutX="337.0" layoutY="122.0" mnemonicParsing="false" text="Выбрать" onAction="#onChooseFileBruteforceButtonClick"/>
                   <Separator layoutX="52.0" layoutY="90.0" prefHeight="5.0" prefWidth="513.0" />
                   <Label layoutX="58.0" layoutY="122.0" prefHeight="25.0" prefWidth="149.0" text="Выберите файл:">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Button fx:id="bruteforce" layoutX="41.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="385.0" text="Ave! True to Caesar!">
+                  <Button fx:id="bruteforce" layoutX="41.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="385.0" text="Ave! True to Caesar!" onAction="#onDoBruteforceButtonClick">
                      <font>
                         <Font size="36.0" />
                      </font>
